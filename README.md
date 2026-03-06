@@ -1,51 +1,35 @@
-# Portfolio Site
+# Sai Sree Harsha Idarapalli
 
-A bold, clean, recruiter-friendly portfolio built with Next.js 16 + TypeScript.
+Full Stack Software Engineer with 4+ years of experience building enterprise-grade applications and distributed systems using Java, Spring Boot, React, and AWS.
 
-## Stack
+## About Me
 
-- Next.js 16 (App Router)
-- TypeScript
-- Tailwind CSS (v4)
-- Framer Motion
-- Zod
-- Vitest + Playwright
+I focus on delivering secure, scalable, and production-ready software that solves real business problems. My work combines backend architecture, API design, and clean frontend implementation, with strong attention to performance, reliability, and maintainability.
 
-## Scripts
+## Professional Snapshot
 
-- `npm run dev`: Start dev server
-- `npm run build`: Production build
-- `npm run start`: Run production server
-- `npm run lint`: ESLint
-- `npm run typecheck`: TypeScript check
-- `npm run format`: Format code with Prettier
-- `npm run format:check`: Prettier check
-- `npm run test`: Unit tests (Vitest)
-- `npm run test:e2e`: End-to-end tests (Playwright)
-- `npm run ingest:resume -- <path-to-resume.pdf|docx>`: Parse resume into structured JSON
+- Built and enhanced enterprise applications across backend and frontend systems in Agile environments.
+- Designed REST, SOAP, and GraphQL services integrated with relational databases.
+- Improved API throughput and system reliability through multithreading and event-driven architecture.
+- Implemented CI/CD pipelines with Maven, Jenkins, Docker, and Kubernetes to reduce deployment failures.
 
-## Resume Ingestion
+## Core Strengths
 
-The one-time ingestion script writes `content/resume-ingestion.json`.
+- Backend: Java, Spring Boot, Microservices, REST/SOAP/GraphQL
+- Frontend: React, JavaScript, HTML, CSS
+- Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins, CI/CD
+- Data & Messaging: SQL Server, Oracle, Kafka, Hibernate, PL/SQL
 
-Example using your provided resume path:
+## Education
 
-```bash
-npm run ingest:resume -- "C:\Users\bandu\Downloads\Harsha_idarapalli_Software Engineer.pdf"
-```
+Master of Science in Computer Science, Illinois State University (GPA: 3.55)
 
-Then update `content/portfolio.json` with polished content and links.
+## Portfolio
 
-## Environment Variables
+This repository powers my personal portfolio website and highlights my experience, projects, and engineering approach.
 
-Create `.env.local`:
+## Contact
 
-```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN=your-domain.vercel.app
-RESEND_API_KEY=...
-CONTACT_TO_EMAIL=you@example.com
-CONTACT_FROM_EMAIL=Portfolio <onboarding@resend.dev>
-```
-
-If email variables are missing, contact API still returns success for local UX testing.
+- Email: banduharsha@gmail.com
+- GitHub: [har2305](https://github.com/har2305)
+- LinkedIn: [harshaidirapalli](https://www.linkedin.com/in/harshaidirapalli)
