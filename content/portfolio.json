@@ -1,0 +1,138 @@
+{
+  "profile": {
+    "name": "Sai Sree Harsha Idarapalli",
+    "title": "Full Stack Software Engineer",
+    "location": "United States",
+    "email": "banduharsha@gmail.com",
+    "phone": "+1-309-750-3087",
+    "summary": "Full-stack software engineer with 4+ years of experience building enterprise applications using Java, Spring Boot, React, and AWS. I focus on secure, scalable systems, event-driven architecture, and production-grade delivery with CI/CD automation.",
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/har2305" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/harshaidirapalli" },
+      { "label": "Resume PDF", "href": "https://example.com/resume.pdf" }
+    ]
+  },
+  "experiences": [
+    {
+      "company": "Cedent Consulting Inc",
+      "role": "Software Developer",
+      "location": "Remote, USA",
+      "startDate": "Jun 2025",
+      "endDate": "Present",
+      "highlights": [
+        "Developed full-stack enterprise applications with Java, Spring Boot, React, and AWS following enterprise architecture standards.",
+        "Designed REST, SOAP, and GraphQL services integrated with Oracle and SQL Server using Hibernate and PL/SQL.",
+        "Built event-driven workflows with Apache Kafka and UM queues to support asynchronous microservices.",
+        "Improved API throughput by 30% with multithreading, thread pooling, and synchronization.",
+        "Reduced deployment failures by 40% through CI/CD automation using Maven, Jenkins, Docker, and Kubernetes."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "AWS",
+        "Kafka",
+        "Docker",
+        "Kubernetes",
+        "SQL Server",
+        "Oracle"
+      ]
+    },
+    {
+      "company": "IQ Hector LLC",
+      "role": "Software Engineer",
+      "location": "Texas, USA",
+      "startDate": "Jun 2024",
+      "endDate": "May 2025",
+      "highlights": [
+        "Engineered backend services and reusable libraries in Java and Python for scalable microservices platforms.",
+        "Built RESTful APIs consumed by React frontends and deployed workloads to Apache Tomcat.",
+        "Improved response times by 25% through SQL Server query and schema optimization."
+      ],
+      "technologies": ["Java", "Python", "React", "REST", "Apache Tomcat", "SQL Server"]
+    },
+    {
+      "company": "Amazon",
+      "role": "Software Development Engineer",
+      "location": "Hyderabad, India",
+      "startDate": "Jul 2020",
+      "endDate": "Aug 2022",
+      "highlights": [
+        "Built distributed AWS backend services supporting high transaction volumes.",
+        "Designed asynchronous data-processing flows with Kafka-like messaging systems.",
+        "Reduced production incidents by 30% by automating monitoring and alerting."
+      ],
+      "technologies": ["AWS", "Distributed Systems", "Messaging", "Monitoring", "Performance Tuning"]
+    },
+    {
+      "company": "Chembond Chemicals",
+      "role": "Software Engineer",
+      "location": "Navi Mumbai, India",
+      "startDate": "Jun 2019",
+      "endDate": "Jul 2020",
+      "highlights": [
+        "Developed Java backend applications and internal automation tools.",
+        "Created reporting modules that reduced manual processing by 40%.",
+        "Handled debugging, functional testing, and production support triage."
+      ],
+      "technologies": ["Java", "REST APIs", "Relational Databases", "Testing", "Production Support"]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "event-ticketing-platform",
+      "name": "Event Ticketing Platform",
+      "description": "Full-stack platform for event discovery, booking, and operational workflows.",
+      "impact": "Combined Java/Spring services with React and Kafka workflows for resilient transactions.",
+      "technologies": ["Java", "Spring Boot", "React", "Kafka", "AWS", "Docker", "CI/CD"],
+      "href": "https://github.com/har2305",
+      "featured": true
+    },
+    {
+      "slug": "rental-expense-dashboard",
+      "name": "Rental Expense Dashboard",
+      "description": "Dashboard for expense tracking, visualization, and reporting over SQL-backed data.",
+      "impact": "Provided clear financial visibility through efficient full-stack architecture.",
+      "technologies": ["React", "Spring Boot", "SQL"],
+      "href": "https://github.com/har2305",
+      "featured": true
+    },
+    {
+      "slug": "ai-disease-prediction-system",
+      "name": "AI Disease Prediction System",
+      "description": "Python-based data pipeline and model evaluation workflow for health outcome prediction.",
+      "impact": "Improved experimentation speed with repeatable data preparation and evaluation steps.",
+      "technologies": ["Python", "Data Pipelines", "Machine Learning"],
+      "href": "https://github.com/har2305",
+      "featured": false
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Backend Engineering",
+      "skills": ["Java", "Spring Boot", "Microservices", "REST/SOAP/GraphQL", "Multithreading"]
+    },
+    {
+      "title": "Frontend & Product",
+      "skills": ["React", "JavaScript", "HTML", "CSS", "Responsive UI"]
+    },
+    {
+      "title": "Platform & Delivery",
+      "skills": ["AWS", "Docker", "Kubernetes", "Kafka", "Jenkins", "CI/CD", "SonarQube"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Illinois State University",
+      "degree": "Master of Science in Computer Science (GPA 3.55)",
+      "startDate": "Aug 2022",
+      "endDate": "May 2024",
+      "highlights": ["Advanced software engineering", "Distributed systems", "Scalable backend architecture"]
+    }
+  ],
+  "contact": {
+    "heading": "Let's build reliable software at scale",
+    "description": "Open to full-stack and backend engineering opportunities where product impact and engineering quality both matter.",
+    "cta": "Start a conversation"
+  }
+}
