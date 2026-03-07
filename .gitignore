@@ -45,3 +45,7 @@ next-env.d.ts
 /test-results
 /.devserver*.log
 content/resume-ingestion.json
+
+# Local portfolio exports
+Portfolio.rtf
+Portfolio.docx
