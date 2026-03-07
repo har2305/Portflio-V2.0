@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { type FormEvent, useState } from "react";
 
 type FormState = {
   status: "idle" | "loading" | "success" | "error";
@@ -10,8 +10,11 @@ type FormState = {
 export function ContactForm() {
   const [state, setState] = useState<FormState>({ status: "idle" });
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     setState({ status: "loading" });
+
+    const formData = new FormData(event.currentTarget);
 
     const payload = {
       name: formData.get("name"),
@@ -19,28 +22,31 @@ export function ContactForm() {
       message: formData.get("message"),
     };
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    const json = (await response.json()) as { ok: boolean; error?: string };
+      const json = (await response.json()) as { ok: boolean; error?: string };
 
-    if (!response.ok || !json.ok) {
-      setState({ status: "error", message: json.error ?? "Something went wrong" });
-      return;
+      if (!response.ok || !json.ok) {
+        setState({ status: "error", message: json.error ?? "Something went wrong" });
+        return;
+      }
+
+      setState({ status: "success", message: "Message sent successfully." });
+      event.currentTarget.reset();
+    } catch {
+      setState({ status: "error", message: "Unable to send your message right now." });
     }
-
-    setState({ status: "success", message: "Message sent successfully." });
   }
 
   return (
     <form
       noValidate
-      action={async (formData) => {
-        await handleSubmit(formData);
-      }}
+      onSubmit={handleSubmit}
       className="card space-y-4 p-6"
       data-testid="contact-form"
     >
