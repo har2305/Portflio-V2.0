@@ -1,5 +1,7 @@
 import { contactRequestSchema } from "@/lib/schemas";
 
+export const MAX_CONTACT_REQUEST_BYTES = 10_000;
+
 export type ContactRequest = {
   name: string;
   email: string;
@@ -36,8 +38,7 @@ export async function sendContactEmail(payload: ContactRequest) {
   });
 
   if (!response.ok) {
-    const raw = await response.text();
-    throw new Error(`Email provider error: ${raw}`);
+    throw new Error(`Email provider error (${response.status})`);
   }
 
   return { delivered: true };
