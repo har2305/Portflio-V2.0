@@ -32,4 +32,4 @@ This repository powers my personal portfolio website and highlights my experienc
 
 - Email: banduharsha@gmail.com
 - GitHub: [har2305](https://github.com/har2305)
-- LinkedIn: [harshaidirapalli](https://www.linkedin.com/in/harshaidirapalli)
+- LinkedIn: [harshaidarapalli](https://www.linkedin.com/in/harshaidarapalli)
