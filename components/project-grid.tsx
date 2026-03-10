@@ -12,7 +12,7 @@ type ProjectGridProps = {
 
 function projectGlyph(name: string) {
   const lowered = name.toLowerCase();
-  if (lowered.includes("ticket")) return "ET"
+  if (lowered.includes("ticket")) return "ET";
   if (lowered.includes("dashboard")) return "DB";
   if (lowered.includes("ai") || lowered.includes("prediction")) return "AI";
   return "PR";
@@ -76,7 +76,6 @@ export function ProjectGrid({ projects, featuredOnly = false }: ProjectGridProps
               <div className="space-y-4 p-6">
                 <div className="flex items-start justify-between gap-4">
                   <h3 className="text-xl font-semibold text-[color:var(--color-accent-2)]">{project.name}</h3>
-                 
                 </div>
                 <p className="leading-7 text-[color:var(--color-muted)]">{project.description}</p>
                 <p className="text-sm text-[color:var(--color-text)]">{project.impact}</p>
