@@ -49,3 +49,6 @@ content/resume-ingestion.json
 # Local portfolio exports
 Portfolio.rtf
 Portfolio.docx
+preview-start.cmd
+run-dev.cmd
+/assets/

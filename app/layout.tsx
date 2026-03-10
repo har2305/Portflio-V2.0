@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Cinzel, Manrope, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
 });
 
@@ -52,10 +57,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased`}>
+      <body className={`${manrope.variable} ${cinzel.variable} ${jetBrainsMono.variable} antialiased`}>
         {plausibleDomain ? (
           <Script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.js" />
         ) : null}
+        <div className="ship-glow" aria-hidden />
         <div className="app-shell">
           <Nav />
           <main>{children}</main>
